@@ -52,7 +52,11 @@ function App() {
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
-      <Footer items={items} />
+      <Footer
+        items={items.filter((item) =>
+          item.item.toLowerCase().includes(newSearch.toLowerCase())
+        )}
+      />
     </div>
   );
 }

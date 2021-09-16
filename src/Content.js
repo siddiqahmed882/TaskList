@@ -1,4 +1,5 @@
 import { FaTrashAlt } from 'react-icons/fa';
+import emptySvg from './empty.svg';
 
 const Content = ({ items, handleCheck, handleDelete }) => {
   return (
@@ -26,7 +27,10 @@ const Content = ({ items, handleCheck, handleDelete }) => {
           ))}
         </ul>
       ) : (
-        <p>No Item</p>
+        <div>
+          <img className='emptyList' src={emptySvg} alt='Empty List' />
+          <p style={{ marginTop: '1.5rem', textAlign: 'center' }}>You have no tasks</p>
+        </div>
       )}
     </main>
   );

@@ -36,6 +36,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: min(450px, 100vw);
   min-height: 100vh;
@@ -128,6 +133,11 @@ code {
 .list__item .delete__item:hover,
 .list__item .delete__item:focus-visible {
   fill: hsl(0, 50%, 50%);
+}
+
+.emptyList {
+  width: 60%;
+  margin: auto;
 }
 
 /* Add Item Form */
